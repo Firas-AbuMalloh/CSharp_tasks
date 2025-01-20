@@ -1,0 +1,7 @@
+C:\Users\Orange\source\repos\Task3oop\Task3oop\bin\Debug\Task3oop.exe.config
+C:\Users\Orange\source\repos\Task3oop\Task3oop\bin\Debug\Task3oop.exe
+C:\Users\Orange\source\repos\Task3oop\Task3oop\bin\Debug\Task3oop.pdb
+C:\Users\Orange\source\repos\Task3oop\Task3oop\obj\Debug\Task3oop.csproj.AssemblyReference.cache
+C:\Users\Orange\source\repos\Task3oop\Task3oop\obj\Debug\Task3oop.csproj.CoreCompileInputs.cache
+C:\Users\Orange\source\repos\Task3oop\Task3oop\obj\Debug\Task3oop.exe
+C:\Users\Orange\source\repos\Task3oop\Task3oop\obj\Debug\Task3oop.pdb
