@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace CSharp_tasks
 {
+    
+
     internal class Program
     {
+
         static void Main(string[] args)
         {
-            //1-	Create console application that read string from user and print the same string
 
-            Console.WriteLine("Plz Enter a String .. "+ "\n Your Enter is : "+Console.ReadLine());
+           
 
+
+            //1 - Create console application that read string from user and print the same string
+
+            Console.WriteLine("Plz Enter a String .. " + "\n ");
+            string s1 = Console.ReadLine();
+            Console.WriteLine("Your Enter is : {0}", s1);
 
 
             double d = 1.1;
@@ -36,7 +44,7 @@ namespace CSharp_tasks
             //////////////////////////////////
             ///
 
-            string[] car = { "BMW","Volvo","Kia"};
+            string[] car = { "BMW", "Volvo", "Kia" };
 
             for (int i = 0; i < car.Length; i++)
             {
@@ -47,8 +55,7 @@ namespace CSharp_tasks
             ///
 
 
-            
-                Console.WriteLine("Input your firstname: ");
+            Console.WriteLine("Input your firstname: ");
 
             string firstname = Console.ReadLine();
 
@@ -60,30 +67,28 @@ namespace CSharp_tasks
             Console.WriteLine("Input your year of birth");
             string age = Console.ReadLine();
 
-            Console.WriteLine("Your Input is :{0} {1} {2}", firstname, lastName,age);
+            Console.WriteLine("Your Input is :{0} {1} {2}", firstname, lastName, age);
 
 
             Console.WriteLine("Input 10 elements in the array  : ");
             int[] arr = new int[10];
 
-            for (int i = 1;i <= 10; i++)
+            for (int i = 1; i <= 10; i++)
             {
-               arr[i]= Convert.ToInt16(Console.ReadLine());
+                arr[i] = Convert.ToInt16(Console.ReadLine());
 
             }
 
-            for (int i= 0; i < arr.Length;i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 Console.WriteLine("element - {0} : {1}", i, arr[i]);
             }
 
 
-            
-
-
-
-
 
         }
     }
+
+
+  
 }
