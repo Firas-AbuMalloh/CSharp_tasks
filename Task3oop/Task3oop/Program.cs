@@ -144,64 +144,57 @@ namespace Task3oop
         }
 
 
-        public static void prime()
+       public static void prime()
+{
+    Console.WriteLine("Please Enter Two Numbers To print all the prime numbers between them: ");
+    int num1 = int.Parse(Console.ReadLine());
+    int num2 = int.Parse(Console.ReadLine());
+    int big;
+    int small;
+
+    if (num1 < num2)
+    {
+        big = num2;
+        small = num1;
+    }
+    else
+    {
+        big = num1;
+        small = num2;
+    }
+
+    if (big < 2)
+    {
+        Console.WriteLine("No Number is Prime.");
+    }
+    else
+    {
+        Console.WriteLine("Prime numbers between {0} and {1}:", small, big);
+
+        for (int i = small; i <= big; i++)
         {
-            Console.WriteLine("Please Enter Two Numbers To print all the prime numbers between them: ");
-            int num1 = int.Parse(Console.ReadLine());
-            int num2 = int.Parse(Console.ReadLine());
-            int big;
-            int small;
-
-            if (num1 < num2)
-            {
-                big = num2;
-                small = num1;
-            }
+            if (i % 2 == 0)
+                continue;
             else
             {
-                big = num1;
-                small = num2;
-            }
-
-            if (big < 2)
-            {
-                Console.WriteLine("No Number is Prime.");
-            }
-            else
-            {
-                Console.WriteLine("Prime numbers between {0} and {1}:", small, big);
-                for (int i = small; i <= big; i++)
+                bool isPrime = false;
+                for (int j = 2; j < i; j++)
                 {
-                    bool isPrime = true;
-
-                    if (i <= 1)
+                    if (i % j == 0)
                     {
                         isPrime = false;
+                        break;
                     }
-                    else if (i > 2 && i % 2 == 0)
-                    {
-                        isPrime = false;
-                    }
-                    else
-                    {
-                        for (int j = 3; j * j <= i; j += 2)
-                        {
-                            if (i % j == 0)
-                            {
-                                isPrime = false;
-                                break;
-                            }
-                        }
-                    }
+                    else isPrime = true;
 
-                    if (isPrime)
-                    {
-                        Console.Write(i + " ");
-                    }
                 }
+                if (isPrime)
+                    Console.Write(i + " ");
             }
-
         }
+    }
+
+}
     }
 }
 
