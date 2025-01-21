@@ -1,0 +1,7 @@
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\bin\Debug\CSharpTask.exe.config
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\bin\Debug\CSharpTask.exe
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\bin\Debug\CSharpTask.pdb
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\obj\Debug\CSharpTask.csproj.AssemblyReference.cache
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\obj\Debug\CSharpTask.csproj.CoreCompileInputs.cache
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\obj\Debug\CSharpTask.exe
+C:\Users\Orange\source\repos\CSharpTask\CSharpTask\obj\Debug\CSharpTask.pdb
