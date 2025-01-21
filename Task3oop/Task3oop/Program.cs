@@ -9,37 +9,69 @@ namespace Task3oop
 {
     public class Room
     {
-        public int roomNumber;
-        public string roomType;
-        public double Price;
-        public bool IsBooked;
-        public const string HotelName = "Grand Stay Hotel";
+
+        public Room() {
+            Console.WriteLine("From Defult Constructor");
+        }
+        public Room(int num, string type, double price, bool booked)
+        {
+            this._roomType = type;
+            this._Price = price;
+            this._IsBooked = booked;
+            this._roomNumber = num;
+        }
+        private int roomNumber;
+        public int _roomNumber { get; set; }
+        private string roomType;
+        public string _roomType { get; set; }
+        private double Price;
+        public double _Price { get; set; }
+        private bool IsBooked;
+        public bool _IsBooked { get; set; }
+        private const string HotelName = "Grand Stay Hotel";
     }
     internal class Program
     {
+        public static void odd()
+        {
+
+            Console.WriteLine("Please Enter a Number To Check if Odd or Even .. .");
+            int num = int.Parse(Console.ReadLine());
+
+            if (num % 2 == 0)
+                Console.WriteLine("Number ({0}) is Even", num);
+            else
+                Console.WriteLine("Number ({0}) is Odd", num);
+        }
+
         static void Main(string[] args)
         {
 
 
-           
             Room room = new Room();
+            Room room2 = new Room();
 
-            Console.WriteLine("Please Enter room number :");
-            int numberOfRoom = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please Enter room Type : Single, Double, Suite");
-            string typeOfRoom = Console.ReadLine();
-            Console.WriteLine("Please Enter room Price :");
-            double PriceOfRoom = Convert.ToDouble(Console.ReadLine());
+            //pattern();
 
+            //Room room = new Room();
 
-            room.roomNumber = numberOfRoom;
-            room.Price = PriceOfRoom;
-            room.roomType = typeOfRoom; ;
-
-            Console.WriteLine("\n\n\n");
+            //Console.WriteLine("Please Enter room number :");
+            //int numberOfRoom = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please Enter room Type : Single, Double, Suite");
+            //string typeOfRoom = Console.ReadLine();
+            //Console.WriteLine("Please Enter room Price :");
+            //double PriceOfRoom = Convert.ToDouble(Console.ReadLine());
 
 
+            //room.roomNumber = numberOfRoom;
+            //room.Price = PriceOfRoom;
+            //room.roomType = typeOfRoom; ;
+
+            //Console.WriteLine("\n\n\n");
+
+            ;
             odd();
+
             Console.WriteLine("\n\n\n");
 
             smallest();
@@ -55,6 +87,7 @@ namespace Task3oop
             Console.WriteLine("\n\n\n");
 
             largest();
+
             Console.WriteLine("\n\n\n");
 
             pattern();
@@ -64,6 +97,7 @@ namespace Task3oop
 
 
         }
+
 
 
         public static void pattern()
@@ -101,19 +135,6 @@ namespace Task3oop
             Console.WriteLine("The largest Number is {0}",largest);
         }
 
-
-        public static void odd()
-        {
-            Console.WriteLine("Please Enter a Number To Check if Odd or Even .. .");
-            int num = int.Parse(Console.ReadLine());
-
-            if (num % 2 == 0)
-                Console.WriteLine("Number ({0}) is Even", num);
-            else
-                Console.WriteLine("Number ({0}) is Odd", num);
-        }
-
-
         public static void smallest()
         {
             Console.WriteLine("Plz Enter 5 Number to Check 2nd smallest of the five .. .");
@@ -128,7 +149,6 @@ namespace Task3oop
             Console.WriteLine("2nd smallest of the five is : {0}", arr[1]);
 
         }
-
 
         public static void factorial()
         {
